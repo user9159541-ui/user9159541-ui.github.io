@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] — IUT Student & Network Detective</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Yusuf<span>.dev</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About me</a>
+        <a href="#courses">My courses</a>
+        <a href="#projects">Projects</a>
+        <a href="#detective">Network detective</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+          🌙 Dark
+        </button>
+        <button id="menuToggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with Custom Illustration -->
+    <section id="about" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="badge">First-Year IT Student @ IUT</span>
+          <h1>Hi, I'm <span class="accent">Yusuf</span>.</h1>
+          <p class="subtitle">
+            I am a first-year Information Technology student at <strong>Inha University in Tashkent</strong>. 
+            I love exploring how the Internet works under the hood, building clean web interfaces, 
+            and blending classic visual storytelling with modern code.
+          </p>
+          <div class="hero-buttons">
+            <a href="#detective" class="btn btn-primary">Explore Network Lab</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <figure class="art-frame">
+            <img src="poster.jpg" alt="The Borough Pier Line — Respect Your Elders vintage sketch">
+            <figcaption>Featured Sketch: "The Borough Pier Line — Respect Your Elders"</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Courses Section -->
+    <section id="courses" class="section">
+      <div class="container">
+        <h2 class="section-title">My Courses</h2>
+        <p class="section-desc">Core subjects I am studying during my freshman year at Inha University in Tashkent.</p>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon">🌐</div>
+            <h3>Introduction to IT</h3>
+            <p>Computer architecture, operating systems, Linux command line, networking layers, and web publishing.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">💻</div>
+            <h3>Object-Oriented Programming</h3>
+            <p>Writing structured, modular software, problem-solving algorithms, and debugging fundamentals.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📐</div>
+            <h3>Calculus & Linear Algebra</h3>
+            <p>Mathematical foundations powering computer graphics, data analysis, and machine learning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Recent hands-on labs and creative experiments.</p>
+        <div class="cards-grid two-col">
+          <article class="card">
+            <span class="tag">Networking & Security</span>
+            <h3>Lab 8: Packet Sniffing & DNS Tracing</h3>
+            <p>Captured live Wi-Fi frames in Wireshark, inspected TCP/UDP encapsulation, traced DNS hierarchy with <code>dig</code>, and verified TLS certificates.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Web Development</span>
+            <h3>Personal Portfolio Homepage</h3>
+            <p>Built a responsive static portfolio with pure HTML, CSS, and JavaScript, featuring persistent dark/light mode and hosted via GitHub Pages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Network Detective Section -->
+    <section id="detective" class="section">
+      <div class="container">
+        <div class="detective-box">
+          <div class="detective-header">
+            <span class="badge">Homework 8 Findings</span>
+            <h2> Network Detective Report</h2>
+          </div>
+          <p class="detective-summary">
+            During my network investigation lab, I traced how packets leave my machine, cross local gateways, 
+            and travel through Autonomous Systems across the Internet:
+          </p>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-label">Internet Service Provider</span>
+              <strong class="stat-value">AS201767</strong>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Local Gateway Hardware</span>
+              <strong class="stat-value">Smartphone Hotspot (Randomized MAC)</strong>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Distance to inha.uz</span>
+              <strong class="stat-value">6 hops away</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">Feel free to reach out for study groups, coding projects, or tech discussions.</p>
+        <div class="contact-links">
+          <a href="mailto:your.email@student.inha.uz" class="btn btn-primary">✉️ Email Me</a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline">🐙 GitHub Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Yusuf • Built for Introduction to IT (Homework 8) at Inha University in Tashkent.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
